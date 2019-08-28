@@ -1,14 +1,11 @@
 package com.gardenia.jdk8;
 
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
 /**
- *
  * optional 不要用于方法参数
- *
  */
 public class OptionalTest2 {
 
@@ -29,8 +26,6 @@ public class OptionalTest2 {
         Optional<Company> optional = Optional.ofNullable(company);
         List<Employee> list = optional.map(company1 -> company.getEmployeeList()).orElse(Collections.emptyList());
         System.out.println(list);
-
-
     }
 
 }
