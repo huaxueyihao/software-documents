@@ -13,7 +13,6 @@ public class PersonTest {
         Person person3 = new Person("wangwu", 30);
 
         List<Person> personList = Arrays.asList(person1, person2, person3);
-
         PersonTest test = new PersonTest();
         List<Person> personResult = test.getPersonsByUsername("zhangsan", personList);
         personResult.forEach(person -> System.out.println(person.getUsername()));
@@ -22,7 +21,6 @@ public class PersonTest {
             return personList.stream().filter(person -> person.getAge() > age).collect(Collectors.toList());
         });
         personsByAge2.forEach(person -> System.out.println(person.getUsername()));
-
 
     }
 

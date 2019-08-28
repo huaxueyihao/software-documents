@@ -38,4 +38,12 @@ public class Student {
         return student1.age - student2.age;
     }
 
+    public int compareByAge(Student student) {
+        return this.getAge() - student.getAge();
+    }
+
+    public int compareByName(Student student) {
+        return this.getName().compareToIgnoreCase(student.getName());
+    }
+
 }
