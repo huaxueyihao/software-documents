@@ -1,7 +1,5 @@
 package com.gardenia.jvm.classloader;
 
-import jdk.internal.util.xml.impl.Input;
-
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
@@ -71,7 +69,7 @@ public class MyTest16 extends ClassLoader {
 
 
     public static void test(ClassLoader classLoader) throws Exception {
-        Class<?> clazz = classLoader.loadClass("com.gardenia.jvm.classloader.Mytest1");
+        Class<?> clazz = classLoader.loadClass("com.gardenia.jvm.classloader.MyTest1");
         Object object = clazz.newInstance();
         System.out.println(object);
         System.out.println(object.getClass().getClassLoader());
@@ -94,7 +92,7 @@ public class MyTest16 extends ClassLoader {
          */
         loader1.setPath("/Users/amao/Desktop/");
 
-        Class<?> clazz = loader1.loadClass("com.gardenia.jvm.classloader.Mytest1");
+        Class<?> clazz = loader1.loadClass("com.gardenia.jvm.classloader.MyTest1");
         System.out.println("class:" + clazz.hashCode());
         Object object = clazz.newInstance();
         System.out.println(object);
@@ -150,7 +148,7 @@ public class MyTest16 extends ClassLoader {
         loader1 = new MyTest16("loader1");
         loader1.setPath("/Users/amao/Desktop/");
 
-        clazz = loader1.loadClass("com.gardenia.jvm.classloader.Mytest1");
+        clazz = loader1.loadClass("com.gardenia.jvm.classloader.MyTest1");
         System.out.println("class:" + clazz.hashCode());
         object = clazz.newInstance();
         System.out.println(object);

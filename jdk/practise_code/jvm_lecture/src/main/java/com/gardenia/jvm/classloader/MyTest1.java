@@ -8,7 +8,7 @@ package com.gardenia.jvm.classloader;
  * -XX:-<option> 表示关闭option选项
  * -XX:<option>=<value> 表示option选项的值设置为value
  */
-public class Mytest1 {
+public class MyTest1 {
 
     public static void main(String[] args) {
 
